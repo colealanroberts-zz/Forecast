@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		05040FDE5086717D1BBC4599 /* Pods_Forecast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1AB7CA8ACB9B9E8DB6BD493 /* Pods_Forecast.framework */; };
+		BB09EAD22130AA1B003900ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB09EAD12130AA1B003900ED /* Assets.xcassets */; };
+		BB785103212F688B00D8168E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB785102212F688B00D8168E /* BaseViewController.swift */; };
+		BB828FC2212F1B920023D385 /* HomeViewController+Lifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB828FC1212F1B920023D385 /* HomeViewController+Lifecycle.swift */; };
+		BB828FC5212F39FF0023D385 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB828FC4212F39FF0023D385 /* Icons.swift */; };
+		BB828FC7212F53AC0023D385 /* HomeViewController+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB828FC6212F53AC0023D385 /* HomeViewController+TableViewDataSource.swift */; };
+		BB828FCD212F54C80023D385 /* HomeViewController+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB828FCC212F54C80023D385 /* HomeViewController+TableViewDelegate.swift */; };
+		BB828FD0212F55C30023D385 /* DailyWeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB828FCF212F55C30023D385 /* DailyWeatherTableViewCell.swift */; };
+		BB828FD2212F56E40023D385 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB828FD1212F56E40023D385 /* Colors.swift */; };
+		BB828FD5212F5EFE0023D385 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB828FD4212F5EFE0023D385 /* DetailViewController.swift */; };
+		BB828FD7212F5F1B0023D385 /* HomeViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB828FD6212F5F1B0023D385 /* HomeViewController+Navigation.swift */; };
 		ED53DC032105D3A7005274C6 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED53DC012105D3A7005274C6 /* Interface.storyboard */; };
 		ED53DC052105D3A8005274C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED53DC042105D3A8005274C6 /* Assets.xcassets */; };
 		ED53DC0C2105D3A8005274C6 /* Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ED53DC0B2105D3A8005274C6 /* Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -23,7 +33,6 @@
 		ED6DA1C12105AE0600FAB69E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6DA1C02105AE0600FAB69E /* AppDelegate.swift */; };
 		ED6DA1C32105AE0600FAB69E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6DA1C22105AE0600FAB69E /* HomeViewController.swift */; };
 		ED6DA1C62105AE0600FAB69E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED6DA1C42105AE0600FAB69E /* Main.storyboard */; };
-		ED6DA1C82105AE0800FAB69E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED6DA1C72105AE0800FAB69E /* Assets.xcassets */; };
 		ED6DA1CB2105AE0800FAB69E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED6DA1C92105AE0800FAB69E /* LaunchScreen.storyboard */; };
 		ED6DA1D62105AEC600FAB69E /* HomeViewController+LocationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6DA1D52105AEC600FAB69E /* HomeViewController+LocationDelegate.swift */; };
 		ED999445212E565600D39D60 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED999444212E565600D39D60 /* HomeViewModel.swift */; };
@@ -73,6 +82,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BB09EAD12130AA1B003900ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB785102212F688B00D8168E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		BB828FC1212F1B920023D385 /* HomeViewController+Lifecycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Lifecycle.swift"; sourceTree = "<group>"; };
+		BB828FC4212F39FF0023D385 /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
+		BB828FC6212F53AC0023D385 /* HomeViewController+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+TableViewDataSource.swift"; sourceTree = "<group>"; };
+		BB828FCC212F54C80023D385 /* HomeViewController+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+TableViewDelegate.swift"; sourceTree = "<group>"; };
+		BB828FCF212F55C30023D385 /* DailyWeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DailyWeatherTableViewCell.swift; path = Forecast/View/Cells/DailyWeatherTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		BB828FD1212F56E40023D385 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		BB828FD4212F5EFE0023D385 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BB828FD6212F5F1B0023D385 /* HomeViewController+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Navigation.swift"; sourceTree = "<group>"; };
 		C401A360813CF58C7AAD9312 /* Pods-Forecast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Forecast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Forecast/Pods-Forecast.debug.xcconfig"; sourceTree = "<group>"; };
 		C7DF76C82B39E4BB8C87D22F /* Pods-Forecast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Forecast.release.xcconfig"; path = "Pods/Target Support Files/Pods-Forecast/Pods-Forecast.release.xcconfig"; sourceTree = "<group>"; };
 		D1AB7CA8ACB9B9E8DB6BD493 /* Pods_Forecast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Forecast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,7 +111,6 @@
 		ED6DA1C02105AE0600FAB69E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED6DA1C22105AE0600FAB69E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		ED6DA1C52105AE0600FAB69E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		ED6DA1C72105AE0800FAB69E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED6DA1CA2105AE0800FAB69E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED6DA1CC2105AE0800FAB69E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED6DA1D52105AEC600FAB69E /* HomeViewController+LocationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+LocationDelegate.swift"; sourceTree = "<group>"; };
@@ -101,6 +119,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		EC231F08E8218DAAC1B7E090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ED53DC082105D3A8005274C6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,6 +161,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BB828FC3212F39F60023D385 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				BB828FC4212F39FF0023D385 /* Icons.swift */,
+				BB828FD1212F56E40023D385 /* Colors.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		BB828FCE212F55770023D385 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BB828FCF212F55C30023D385 /* DailyWeatherTableViewCell.swift */,
+			);
+			name = Cells;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		BB828FD3212F5EED0023D385 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				BB828FD4212F5EFE0023D385 /* DetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		ED53DC002105D3A7005274C6 /* Watch */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +212,7 @@
 		ED6DA1B42105AE0600FAB69E = {
 			isa = PBXGroup;
 			children = (
+				BB09EAD12130AA1B003900ED /* Assets.xcassets */,
 				ED53DC252105D6E2005274C6 /* Apple HQ.gpx */,
 				ED6DA1BF2105AE0600FAB69E /* Forecast */,
 				ED53DC002105D3A7005274C6 /* Watch */,
@@ -184,12 +236,12 @@
 		ED6DA1BF2105AE0600FAB69E /* Forecast */ = {
 			isa = PBXGroup;
 			children = (
+				BB828FC3212F39F60023D385 /* Enum */,
 				ED999443212E561000D39D60 /* ViewModel */,
 				EDBE2FF52105C73E00F0F71B /* Managers */,
 				ED6DA1D22105AE7000FAB69E /* View */,
 				ED6DA1C42105AE0600FAB69E /* Main.storyboard */,
 				ED6DA1C02105AE0600FAB69E /* AppDelegate.swift */,
-				ED6DA1C72105AE0800FAB69E /* Assets.xcassets */,
 				ED6DA1C92105AE0800FAB69E /* LaunchScreen.storyboard */,
 				ED6DA1CC2105AE0800FAB69E /* Info.plist */,
 			);
@@ -199,6 +251,7 @@
 		ED6DA1D22105AE7000FAB69E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BB828FCE212F55770023D385 /* Cells */,
 				ED6DA1D32105AE7B00FAB69E /* View Controllers */,
 			);
 			path = View;
@@ -207,6 +260,8 @@
 		ED6DA1D32105AE7B00FAB69E /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BB785102212F688B00D8168E /* BaseViewController.swift */,
+				BB828FD3212F5EED0023D385 /* Detail */,
 				ED6DA1D42105AE8400FAB69E /* Home */,
 			);
 			path = "View Controllers";
@@ -215,8 +270,12 @@
 		ED6DA1D42105AE8400FAB69E /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				BB828FCC212F54C80023D385 /* HomeViewController+TableViewDelegate.swift */,
+				BB828FC6212F53AC0023D385 /* HomeViewController+TableViewDataSource.swift */,
+				BB828FC1212F1B920023D385 /* HomeViewController+Lifecycle.swift */,
 				ED53DC232105D47B005274C6 /* HomeViewController+WCSessionDelegate.swift */,
 				ED6DA1D52105AEC600FAB69E /* HomeViewController+LocationDelegate.swift */,
+				BB828FD6212F5F1B0023D385 /* HomeViewController+Navigation.swift */,
 				ED6DA1C22105AE0600FAB69E /* HomeViewController.swift */,
 			);
 			path = Home;
@@ -247,6 +306,7 @@
 			buildPhases = (
 				ED53DBFD2105D3A7005274C6 /* Resources */,
 				ED53DC1F2105D3A8005274C6 /* Embed App Extensions */,
+				EC231F08E8218DAAC1B7E090 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -285,6 +345,7 @@
 				ED6DA1BB2105AE0600FAB69E /* Resources */,
 				FF07EEF61353CC469FF8ED8E /* [CP] Embed Pods Frameworks */,
 				EDBE2FF02105C44100F0F71B /* Embed Watch Content */,
+				1E6CAD411445CFD19F28E287 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -314,6 +375,7 @@
 					};
 					ED6DA1BC2105AE0600FAB69E = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -368,7 +430,7 @@
 			files = (
 				ED53DC262105D6E2005274C6 /* Apple HQ.gpx in Resources */,
 				ED6DA1CB2105AE0800FAB69E /* LaunchScreen.storyboard in Resources */,
-				ED6DA1C82105AE0800FAB69E /* Assets.xcassets in Resources */,
+				BB09EAD22130AA1B003900ED /* Assets.xcassets in Resources */,
 				ED6DA1C62105AE0600FAB69E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,6 +438,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1E6CAD411445CFD19F28E287 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Forecast/Pods-Forecast-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9A346CBF7CAFF85BA4942124 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -402,10 +479,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Forecast/Pods-Forecast-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ForecastIO/ForecastIO.framework",
+				"${BUILT_PRODUCTS_DIR}/ScrollableGraphView/ScrollableGraphView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForecastIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ScrollableGraphView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -429,12 +508,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB828FD5212F5EFE0023D385 /* DetailViewController.swift in Sources */,
+				BB828FC7212F53AC0023D385 /* HomeViewController+TableViewDataSource.swift in Sources */,
+				BB828FD2212F56E40023D385 /* Colors.swift in Sources */,
+				BB828FD0212F55C30023D385 /* DailyWeatherTableViewCell.swift in Sources */,
 				ED6DA1D62105AEC600FAB69E /* HomeViewController+LocationDelegate.swift in Sources */,
+				BB785103212F688B00D8168E /* BaseViewController.swift in Sources */,
 				ED999445212E565600D39D60 /* HomeViewModel.swift in Sources */,
+				BB828FC5212F39FF0023D385 /* Icons.swift in Sources */,
 				ED53DC242105D47B005274C6 /* HomeViewController+WCSessionDelegate.swift in Sources */,
+				BB828FC2212F1B920023D385 /* HomeViewController+Lifecycle.swift in Sources */,
 				ED6DA1C32105AE0600FAB69E /* HomeViewController.swift in Sources */,
 				EDBE2FF72105C75300F0F71B /* WatchManager.swift in Sources */,
+				BB828FCD212F54C80023D385 /* HomeViewController+TableViewDelegate.swift in Sources */,
 				ED6DA1C12105AE0600FAB69E /* AppDelegate.swift in Sources */,
+				BB828FD7212F5F1B0023D385 /* HomeViewController+Navigation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -697,7 +785,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.17degrees.Forecast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -716,7 +804,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.17degrees.Forecast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

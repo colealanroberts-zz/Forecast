@@ -15,17 +15,19 @@ extension HomeViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
 
         if status == .notDetermined {
-            self.locationManager.requestAlwaysAuthorization()
+            homeViewModel.locationManager.requestAlwaysAuthorization()
         }
 
         if status == .authorizedAlways {
-            self.locationManager.startUpdatingLocation()
+            homeViewModel.locationManager.startUpdatingLocation()
         }
     }
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
 
         guard let location = locations.last else { return }
+        
+        homeViewModel.spinner.startAnimating()
 
         homeViewModel.getCity(location, { (city) in
             DispatchQueue.main.async {
@@ -33,8 +35,29 @@ extension HomeViewController: CLLocationManagerDelegate {
             }
         })
         
-        homeViewModel.getForecast(location, { (forecast) in
+        homeViewModel.getForecast(location, { (forecast, error) in
+            
+            if (error != nil) {
+                print("Uh oh...")
+            }
+            
+            self.hourlyForecast = forecast?.hourly.map {
+                $0.data
+            } ?? []
+            
+            self.tableViewDataSource = forecast?.daily.map {
+                $0.data
+            } ?? []
+
+            guard let icon = forecast?.currently?.icon else { return }
+            let iconImage = self.homeViewModel.getIcon(icon)
+
             DispatchQueue.main.async {
+                self.iconImageView.image = iconImage
+            }
+            
+            DispatchQueue.main.async {
+                self.homeViewModel.spinner.stopAnimating()
                 
                 guard let temperature = forecast?.currently?.temperature else { return }
                 guard let summary     = forecast?.currently?.summary else { return }
@@ -46,7 +69,11 @@ extension HomeViewController: CLLocationManagerDelegate {
                 
                 self.currentTemperatureLabel.text = tempAsString + "°"
                 self.summaryLabel.text = summary
+                
+                self.tableView.reloadData()
             }
         })
+        
+        manager.stopUpdatingLocation()
     }
 }

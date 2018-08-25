@@ -47,6 +47,8 @@
 	<string>To gather relevant location and weather data</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>To gather relevant location and weather data</string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<true/>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

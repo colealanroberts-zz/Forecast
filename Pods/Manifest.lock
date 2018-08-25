@@ -1,16 +1,15 @@
 PODS:
   - ForecastIO (5.0.0)
+  - ScrollableGraphView (4.0.5)
 
 DEPENDENCIES:
   - ForecastIO
-
-SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
-    - ForecastIO
+  - ScrollableGraphView
 
 SPEC CHECKSUMS:
   ForecastIO: 013d0110a0977712624973ceb425da1936b02acf
+  ScrollableGraphView: 6386dbae8d92e8ec9fda9f386f2ba6e2c90c59a3
 
-PODFILE CHECKSUM: c517cb84bcb320dc8e635864e5c048e492043db6
+PODFILE CHECKSUM: a3086503ef8b3e67a427959e02844a3466a8f2f7
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.4.0

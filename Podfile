@@ -8,6 +8,7 @@ target 'Forecast' do
   # Pods for Forecast
 
   pod 'ForecastIO'
+  pod 'ScrollableGraphView'
 
 
 end

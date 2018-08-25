@@ -12,10 +12,57 @@ import ForecastIO
 
 class HomeViewModel {
     
+    // MARK: - Properties
+    
     let forecast = DarkSkyClient(apiKey: "b6e4edcb31a89fe6409e93e4aaaf6ac1")
     let geocoder: CLGeocoder = CLGeocoder()
+    let locationManager: CLLocationManager = CLLocationManager()
+    let spinner: UIActivityIndicatorView = UIActivityIndicatorView()
     
-    public func getCity(_ location: CLLocation, _ completionHandler: @escaping(_ place: String?) ->()) {
+    // MARK: - Public methods
+    
+    public func getIcon(_ icon: Icon) -> UIImage {
+        
+        var iconName: String?
+        
+        switch(icon) {
+        case .clearDay:
+            iconName = Icons.clearDay
+        
+        case .clearNight:
+            iconName = Icons.clearDay
+        
+        case .rain:
+            iconName = Icons.rain
+            
+        case .snow:
+            iconName = Icons.snow
+            
+        case .sleet:
+            iconName = Icons.sleet
+            
+        case .wind:
+            iconName = Icons.wind
+            
+        case .fog:
+            iconName = Icons.fog
+            
+        case .cloudy:
+            iconName = Icons.cloudy
+        
+        case .partlyCloudyDay:
+            iconName = Icons.mostlyCloudy
+            
+        case .partlyCloudyNight:
+            iconName = Icons.partlyCloudyNight
+        }
+        
+        guard let name = iconName else { return UIImage() }
+        return UIImage(named: name)!
+    }
+    
+    public func getCity(_ location: CLLocation, _ completionHandler: @escaping(_ place: String?) -> ()) {
+        
         geocoder.reverseGeocodeLocation(location) { (placemarks, error) in
             
             if (error != nil) {
@@ -28,19 +75,25 @@ class HomeViewModel {
         }
     }
     
-    public func getForecast(_ location: CLLocation, _ completionHandler: @escaping(_ forecast: Forecast?) -> ()) {
+    public func getForecast(_ location: CLLocation, _ completionHandler: @escaping(_ forecast: Forecast?, _ error: Error?) -> ()) {
 
         forecast.language = .english
         forecast.getForecast(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude) { result in
             
             switch result {
             case .success(let currentForecast, _):
-                completionHandler(currentForecast)
+                completionHandler(currentForecast, nil)
                 
             case .failure(let error):
-                print(error)
-                completionHandler(nil)
+                completionHandler(nil, error)
             }
         }
+    }
+    
+    public func getLocalizedWeekDay(_ day: Int) -> String {
+        let i = day - 1
+        let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+        
+        return days[i]
     }
 }
