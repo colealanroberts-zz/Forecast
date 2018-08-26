@@ -18,6 +18,7 @@ class HomeViewModel {
     let geocoder: CLGeocoder = CLGeocoder()
     let locationManager: CLLocationManager = CLLocationManager()
     let spinner: UIActivityIndicatorView = UIActivityIndicatorView()
+    let notificationCenter: NotificationCenter = NotificationCenter.default
     
     var isLiteMode: Bool = true
     

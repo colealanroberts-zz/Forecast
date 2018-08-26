@@ -16,13 +16,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     
-        UIApplication.shared.setMinimumBackgroundFetchInterval(900)
+        
+        // Update the data every 10 minutes
+        
+        let updateTime: Double = 600
+        
+        UIApplication.shared.setMinimumBackgroundFetchInterval(updateTime)
         
         return true
     }
     
     func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-
+        
+        if let homeViewController = window?.rootViewController as? HomeViewController {
+            homeViewController.refreshForecast()
+        }
+        
+        completionHandler(.noData)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

@@ -34,8 +34,6 @@ extension HomeViewController: UITableViewDataSource {
         
         if indexPath.row == 0 {
             cell.dayLabel.text = "Today"
-        } else if indexPath.row == 1 {
-            cell.dayLabel.text = "Tomorrow"
         } else {
             cell.dayLabel.text = homeViewModel.getLocalizedWeekDay(weekDay)
         }

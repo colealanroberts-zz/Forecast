@@ -11,14 +11,35 @@ import CoreLocation
 import ForecastIO
 
 extension HomeViewController: CLLocationManagerDelegate {
+    
+    fileprivate func revealUI() {
+        DispatchQueue.main.async {
+            self.homeViewModel.spinner.stopAnimating()
+            
+            UIView.animate(withDuration: 1.2, animations: {
+                self.tableView.alpha = 1.0
+            })
+        }
+    }
 
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-
-        if status == .notDetermined {
-            homeViewModel.locationManager.requestAlwaysAuthorization()
-        }
-
-        if status == .authorizedAlways {
+        
+        switch(status) {
+        
+        case .notDetermined:
+            homeViewModel.locationManager.requestWhenInUseAuthorization()
+            
+        case .denied:
+            // TODO
+            print("Show the user a message...")
+            
+        case .restricted:
+            print("Show the user a message...")
+            
+        case .authorizedWhenInUse:
+            homeViewModel.locationManager.startUpdatingLocation()
+            
+        case .authorizedAlways:
             homeViewModel.locationManager.startUpdatingLocation()
         }
     }
@@ -26,8 +47,6 @@ extension HomeViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
 
         guard let location = locations.last else { return }
-        
-        homeViewModel.spinner.startAnimating()
 
         homeViewModel.getCity(location, { (city) in
             DispatchQueue.main.async {
@@ -54,15 +73,11 @@ extension HomeViewController: CLLocationManagerDelegate {
 
             DispatchQueue.main.async {
                 
-                self.homeViewModel.spinner.stopAnimating()
-                
                 guard let temperature = forecast?.currently?.temperature else { return }
                 guard let summary     = forecast?.currently?.summary else { return }
                 guard let humidity    = forecast?.currently?.humidity else { return }
                 guard let windSpeed   = forecast?.currently?.windSpeed else { return }
                 guard let uvIndex     = forecast?.currently?.uvIndex else { return }
-                
-                dump(forecast?.currently)
                 
                 // Temp
                 
@@ -91,9 +106,10 @@ extension HomeViewController: CLLocationManagerDelegate {
                 self.iconImageView.image = iconImage
                 
                 self.tableView.reloadData()
+                self.revealUI()
             }
         })
-        
+    
         manager.stopUpdatingLocation()
     }
 }

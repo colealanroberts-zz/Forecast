@@ -15,12 +15,13 @@ class HomeViewController: BaseViewController {
     
     // MARK: - Properties
 
-    var selectedDay: DataPoint?
-    var homeViewModel: HomeViewModel = HomeViewModel()
-    var hourlyForecast = [DataPoint]()
     var isLiteMode: Bool = false
+    var homeViewModel: HomeViewModel = HomeViewModel()
+    var selectedDay: DataPoint?
+    var hourlyForecast = [DataPoint]()
     var weeklyForecast = [DataPoint]()
     let refreshControl = UIRefreshControl()
+    let watchSession = WCSession.default
     
     // MARK: - IBOutlets
     
@@ -96,11 +97,12 @@ class HomeViewController: BaseViewController {
         didSet {
             tableView.delegate = self
             tableView.dataSource = self
+            tableView.alpha = 0.0
             tableView.backgroundColor = Colors.darkGrey
         }
     }
 
-    @IBAction func constrastButtonPressed(_ sender: UIButton) {
+    @IBAction func contrastButtonPressed(_ sender: UIButton) {
         
         isLiteMode = !isLiteMode
         

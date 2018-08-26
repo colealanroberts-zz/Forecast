@@ -371,6 +371,11 @@
 					};
 					ED53DC0A2105D3A8005274C6 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes.watchos.extension = {
+								enabled = 1;
+							};
+						};
 					};
 					ED6DA1BC2105AE0600FAB69E = {
 						CreatedOnToolsVersion = 9.4.1;
