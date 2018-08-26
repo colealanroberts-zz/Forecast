@@ -19,6 +19,8 @@ class HomeViewModel {
     let locationManager: CLLocationManager = CLLocationManager()
     let spinner: UIActivityIndicatorView = UIActivityIndicatorView()
     
+    var isLiteMode: Bool = true
+    
     // MARK: - Public methods
     
     public func getIcon(_ icon: Icon) -> UIImage {
@@ -59,6 +61,13 @@ class HomeViewModel {
         
         guard let name = iconName else { return UIImage() }
         return UIImage(named: name)!
+    }
+
+    @objc func getUserLocation() -> CLLocation {
+        locationManager.startUpdatingLocation()
+        
+        guard let location = locationManager.location else { return CLLocation() }
+        return location
     }
     
     public func getCity(_ location: CLLocation, _ completionHandler: @escaping(_ place: String?) -> ()) {

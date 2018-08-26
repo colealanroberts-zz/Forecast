@@ -22,18 +22,9 @@ class BaseViewController: UIViewController {
         setNavigationBarTransparent()
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        self.view.backgroundColor = Colors.darkGrey
-        self.navigationController?.navigationBar.barStyle = UIBarStyle.default
-        self.navigationController?.navigationBar.isTranslucent = true
-        self.navigationController?.navigationBar.setBackgroundImage(nil, for: UIBarMetrics.default)
-        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
+        setNavigationBarTransparent()
     }
     
     override func didReceiveMemoryWarning() {
@@ -52,9 +43,20 @@ class BaseViewController: UIViewController {
     // MARK: - Public methods
     
     public func setNavigationBarTransparent() {
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.isTranslucent = true
-        self.navigationController?.view.backgroundColor = UIColor.clear
+        navigationController?.setNavigationBarHidden(false, animated: false)
+        navigationController?.navigationBar .setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = true
+        navigationController?.view.backgroundColor = UIColor.clear
+        navigationController?.navigationBar.backgroundColor =  UIColor.clear
+    }
+    
+    public func showAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okayAction = UIAlertAction(title: "Okay", style: .default, handler: nil)
+        
+        alert.addAction(okayAction)
+        
+        self.present(alert, animated: true, completion: nil)
     }
 }

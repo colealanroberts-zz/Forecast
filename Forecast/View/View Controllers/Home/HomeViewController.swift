@@ -18,7 +18,9 @@ class HomeViewController: BaseViewController {
     var selectedDay: DataPoint?
     var homeViewModel: HomeViewModel = HomeViewModel()
     var hourlyForecast = [DataPoint]()
-    var tableViewDataSource = [DataPoint]()
+    var isLiteMode: Bool = false
+    var weeklyForecast = [DataPoint]()
+    let refreshControl = UIRefreshControl()
     
     // MARK: - IBOutlets
     
@@ -47,6 +49,42 @@ class HomeViewController: BaseViewController {
         }
     }
     
+    @IBOutlet weak var uvLabel: UILabel! {
+        didSet {
+            uvLabel.textColor = Colors.white
+        }
+    }
+
+    @IBOutlet weak var uvStaticLabel: UILabel! {
+        didSet {
+            uvStaticLabel.textColor = Colors.grey
+        }
+    }
+    
+    @IBOutlet weak var windSpeedLabel: UILabel! {
+        didSet {
+            windSpeedLabel.textColor = Colors.white
+        }
+    }
+    
+    @IBOutlet weak var windSpeedStaticLabel: UILabel! {
+        didSet {
+            windSpeedStaticLabel.textColor = Colors.grey
+        }
+    }
+    
+    @IBOutlet weak var humidityLabel: UILabel! {
+        didSet {
+            humidityLabel.textColor = Colors.white
+        }
+    }
+    
+    @IBOutlet weak var humidityStaticLabel: UILabel! {
+        didSet {
+            humidityStaticLabel.textColor = Colors.grey
+        }
+    }
+    
     @IBOutlet weak var tableViewHeaderView: UIView! {
         didSet {
             tableViewHeaderView.backgroundColor = Colors.darkGrey
@@ -61,9 +99,24 @@ class HomeViewController: BaseViewController {
             tableView.backgroundColor = Colors.darkGrey
         }
     }
-    
-    @IBOutlet weak var lowTemperatureLabel: UILabel!
-    @IBOutlet weak var highTemperatureLabel: UILabel!
+
+    @IBAction func constrastButtonPressed(_ sender: UIButton) {
+        
+        isLiteMode = !isLiteMode
+        
+        if isLiteMode {
+            self.view.backgroundColor = Colors.white
+            tableView.backgroundColor = Colors.white
+            tableViewHeaderView.backgroundColor = Colors.white
+            tableView.backgroundView?.backgroundColor = Colors.white
+        } else {
+            self.view.backgroundColor = Colors.darkGrey
+            tableView.backgroundColor = Colors.darkGrey
+            tableViewHeaderView.backgroundColor = Colors.darkGrey
+            tableView.backgroundView?.backgroundColor = Colors.darkGrey
+        }
+        
+    }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent

@@ -237,7 +237,6 @@
 			isa = PBXGroup;
 			children = (
 				BB828FC3212F39F60023D385 /* Enum */,
-				ED999443212E561000D39D60 /* ViewModel */,
 				EDBE2FF52105C73E00F0F71B /* Managers */,
 				ED6DA1D22105AE7000FAB69E /* View */,
 				ED6DA1C42105AE0600FAB69E /* Main.storyboard */,
@@ -270,6 +269,7 @@
 		ED6DA1D42105AE8400FAB69E /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				ED999443212E561000D39D60 /* ViewModel */,
 				BB828FCC212F54C80023D385 /* HomeViewController+TableViewDelegate.swift */,
 				BB828FC6212F53AC0023D385 /* HomeViewController+TableViewDataSource.swift */,
 				BB828FC1212F1B920023D385 /* HomeViewController+Lifecycle.swift */,
@@ -345,7 +345,6 @@
 				ED6DA1BB2105AE0600FAB69E /* Resources */,
 				FF07EEF61353CC469FF8ED8E /* [CP] Embed Pods Frameworks */,
 				EDBE2FF02105C44100F0F71B /* Embed Watch Content */,
-				1E6CAD411445CFD19F28E287 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -438,21 +437,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1E6CAD411445CFD19F28E287 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Forecast/Pods-Forecast-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9A346CBF7CAFF85BA4942124 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -479,12 +463,10 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Forecast/Pods-Forecast-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ForecastIO/ForecastIO.framework",
-				"${BUILT_PRODUCTS_DIR}/ScrollableGraphView/ScrollableGraphView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForecastIO.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ScrollableGraphView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

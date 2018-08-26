@@ -45,7 +45,7 @@ extension HomeViewController: CLLocationManagerDelegate {
                 $0.data
             } ?? []
             
-            self.tableViewDataSource = forecast?.daily.map {
+            self.weeklyForecast = forecast?.daily.map {
                 $0.data
             } ?? []
 
@@ -53,22 +53,42 @@ extension HomeViewController: CLLocationManagerDelegate {
             let iconImage = self.homeViewModel.getIcon(icon)
 
             DispatchQueue.main.async {
-                self.iconImageView.image = iconImage
-            }
-            
-            DispatchQueue.main.async {
+                
                 self.homeViewModel.spinner.stopAnimating()
                 
                 guard let temperature = forecast?.currently?.temperature else { return }
                 guard let summary     = forecast?.currently?.summary else { return }
+                guard let humidity    = forecast?.currently?.humidity else { return }
+                guard let windSpeed   = forecast?.currently?.windSpeed else { return }
+                guard let uvIndex     = forecast?.currently?.uvIndex else { return }
+                
+                dump(forecast?.currently)
+                
+                // Temp
                 
                 let temp = temperature.rounded()
                 var tempAsString = String(describing: temp)
-                
                 tempAsString = tempAsString.components(separatedBy: ".")[0]
+                
+                // Humidity
+                
+                var humidityAsPercent = humidity * 100
+                humidityAsPercent = humidityAsPercent.rounded()
+                
+                // Windspeed
+                
+                var windSpeedAsString = String(describing: windSpeed.rounded())
+                windSpeedAsString = windSpeedAsString.components(separatedBy: ".")[0]
+                
+                // Update UI
                 
                 self.currentTemperatureLabel.text = tempAsString + "°"
                 self.summaryLabel.text = summary
+                self.humidityLabel.text = String(describing: humidityAsPercent) + "%"
+                self.windSpeedLabel.text = windSpeedAsString + " mph"
+                
+                self.uvLabel.text = String(describing: uvIndex)
+                self.iconImageView.image = iconImage
                 
                 self.tableView.reloadData()
             }

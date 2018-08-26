@@ -2,7 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "if_weather_icons-39_390501.pdf"
+      "filename" : "icon_fog.pdf"
     }
   ],
   "info" : {
@@ -10,6 +10,7 @@
     "author" : "xcode"
   },
   "properties" : {
+    "compression-type" : "lossless",
     "template-rendering-intent" : "template"
   }
 }

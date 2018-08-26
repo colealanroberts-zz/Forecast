@@ -15,7 +15,7 @@ extension HomeViewController: UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "DailyWeatherTableViewCell") as! DailyWeatherTableViewCell
         
-        let day = tableViewDataSource[indexPath.row]
+        let day = weeklyForecast[indexPath.row]
         
         guard let tempLow  = day.temperatureLow else { return cell }
         guard let tempHigh = day.temperatureHigh else { return cell }
@@ -32,9 +32,22 @@ extension HomeViewController: UITableViewDataSource {
         let calendar = Calendar(identifier: .gregorian)
         let weekDay = calendar.component(.weekday, from: day.time)
         
-        cell.dayLabel.text = homeViewModel.getLocalizedWeekDay(weekDay)
+        if indexPath.row == 0 {
+            cell.dayLabel.text = "Today"
+        } else if indexPath.row == 1 {
+            cell.dayLabel.text = "Tomorrow"
+        } else {
+            cell.dayLabel.text = homeViewModel.getLocalizedWeekDay(weekDay)
+        }
         
-        cell.backgroundColor = Colors.darkGrey
+        if isLiteMode {
+            
+            DispatchQueue.main.async {
+                cell.iconImageView.tintColor = Colors.darkGrey
+            }
+        }
+        
+        cell.backgroundColor = UIColor.clear
         
         if let icon = day.icon {
             let image = homeViewModel.getIcon(icon)
@@ -49,7 +62,7 @@ extension HomeViewController: UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tableViewDataSource.count
+        return weeklyForecast.count
     }
 
 }

@@ -31,6 +31,7 @@ class DailyWeatherTableViewCell: UITableViewCell {
     @IBOutlet weak var iconImageView: UIImageView! {
         didSet {
             iconImageView.tintColor = Colors.white
+            iconImageView.contentMode = .center
         }
     }
     

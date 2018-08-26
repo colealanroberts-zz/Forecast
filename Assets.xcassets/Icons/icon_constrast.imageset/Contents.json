@@ -2,7 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "icon_most_cloudy.pdf"
+      "filename" : "icon_constrast.pdf"
     }
   ],
   "info" : {
@@ -10,6 +10,7 @@
     "author" : "xcode"
   },
   "properties" : {
+    "compression-type" : "lossless",
     "template-rendering-intent" : "template"
   }
 }

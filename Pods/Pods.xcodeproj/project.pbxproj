@@ -7,132 +7,79 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		019D66AFEC4B101680E5872B874212E9 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DEA4F42F004298DC1BC98BDE17E58A /* Result.swift */; };
-		06924299C935383FAE0BD41FF7051A76 /* ScrollableGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C0770F411D963356A975D1563F5CDF /* ScrollableGraphView.swift */; };
-		07AD90F7C3645AFA25AA9443F9169367 /* FillDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD97955FAA43EB345A8E76254341C691 /* FillDrawingLayer.swift */; };
-		1ABDCF748E0BD30FE8FA4F9CA038F34D /* ScrollableGraphView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB9404D2A623F95A052B0D3BE6D7D5A /* ScrollableGraphView-dummy.m */; };
-		239C5CB2E122F9A2598E6DE2F22154B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		2AE59BE130AD1576163B169B7CFCA55D /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722A0FED2367758F0404C4C8DE588D0D /* Flag.swift */; };
-		333906F71F29BCAC86DE1E714928744D /* ForecastIO-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 455587F75F6A75E1590E67DBE8E6AE37 /* ForecastIO-dummy.m */; };
-		335C658FCF314B075244ECC777D33336 /* BarDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3B2D099E7B1DC1DC2DEB5EDCAE9921 /* BarDrawingLayer.swift */; };
-		363958A6CD1C10AAC578F890B35CAEB2 /* Plot.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB8990DD8B394918AC1B92E29F7F8CC /* Plot.swift */; };
-		38592B8C73BB7A60BF3A2EAFEA0C1DA6 /* DotPlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20482C3AD8A172D849493EBE09278003 /* DotPlot.swift */; };
-		3A3D91EB6603B70CB22267D34A05A02B /* LinePlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B459D159F1F48D365CC8E0A9494C2F9 /* LinePlot.swift */; };
-		3A87100684704832DDCAF3BB17C762A6 /* GraphPointAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF328A9ADB1B471560EBBEDA218EB0F /* GraphPointAnimation.swift */; };
-		4621C4DFC800741A12315D76BCB8C5A0 /* GradientDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DED9B98E316CE1E7B2BDDCF282424F /* GradientDrawingLayer.swift */; };
-		5402D9A4AB393687828854A369E821C7 /* ScrollableGraphViewDrawingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0796E07C24B94782881A6C92C695431D /* ScrollableGraphViewDrawingDelegate.swift */; };
-		5A9E4AC3F4B887C029087D83252381EF /* BarPlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1429734CD45D2CA2B892C4CAF6314A52 /* BarPlot.swift */; };
-		5CFFF7C3605EE740C50D0BFF6AA302D5 /* ScrollableGraphViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B24332D35B0D03D3599359AAF981B8 /* ScrollableGraphViewDataSource.swift */; };
-		601F1B1C8DFA1E08F4DB3002EC888F82 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B0F438513D1186B1F566FF37FCF7D4 /* Language.swift */; };
-		62D6A90AB568011348B4081CAC4C0DC8 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC77A7CAE68B9CC5837D795CCF3F7183 /* Units.swift */; };
-		63A93AFDE40039A3520F62CDC20AF861 /* GraphPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4467C01B605E5B0AC2B8053C0961123C /* GraphPoint.swift */; };
-		6EFC0F1CEF3783B1225B65866A68C851 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		7DB15A22FA649742FD3444FE11EC623F /* DotDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DF15D7EBA4987E99E1DE0D1FD4470E /* DotDrawingLayer.swift */; };
-		7FD87C63182D24135F437AF974F8E4B4 /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D58592DD74678E2B42FFC9166CE0770 /* DataPoint.swift */; };
-		81851667331B1DF6174A558047BE1BEA /* ForecastIOError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FD2B0309B8145418A563E4CBC79E8E /* ForecastIOError.swift */; };
-		88D7419E7DF8410EBFAAD323562FD913 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C7292192E739352E4AD82644E9F24 /* Alert.swift */; };
-		88E7330109DCF39CFE3F0A08D2896749 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		901B537C50A75ED7D31FE2EA33F5659B /* ForecastIO-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9923CD341BF609D5BE7F5C6EBC6F3BC0 /* ForecastIO-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D22F927A40279BFED76BAE3DA1C9433 /* ScrollableGraphViewDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0569BF790F840C2BA756C7A7A2957BFB /* ScrollableGraphViewDrawingLayer.swift */; };
-		A7635C4C81C60CE01A5C67888DADF89C /* LineDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF0AB0B7976B1F8FDDA6E15835C59EC /* LineDrawingLayer.swift */; };
-		A83680B4DCEDBBC553516256BA2DF943 /* ReferenceLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66057592A790C0021652F878A0AC4002 /* ReferenceLines.swift */; };
-		B4B7B065414420A6786FF49777AD81A7 /* Pods-Forecast-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B29A163166888C4B04E7C49A463815A /* Pods-Forecast-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B5DA9DAF5453FC8FC2683C2C56C4E0BE /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C722F7B6FD2608E6ABEC076DDDB1F /* Icon.swift */; };
-		B7E25CFE205E1A00AB0A0614EE719B62 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD562139FD8EB1C7A6CB06E2DD7B25D /* Forecast.swift */; };
-		BA9CA98864DD68B6513FF124063D888D /* LabelPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E6A525BFC2AD2514F2EA8AD776A07D /* LabelPool.swift */; };
-		BD999B497F81FE4133BF13323869B10D /* DataBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEA9E11543B07E721BCA1B74FA6413D /* DataBlock.swift */; };
-		CFE641BFC14E301E1EE7C91A20DE362D /* Precipitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA5B7F9A6DDF9130C152FD0A3D8113 /* Precipitation.swift */; };
-		D420E63287F0145D0E9D83EDCFA173A0 /* ScrollableGraphView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FFB376160302019EEA3C9F1BFE3CBB0B /* ScrollableGraphView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D588523B80B0D43F19BE9E3AC2A2F688 /* RequestMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63705C79F30FEC401240EC19D06415FD /* RequestMetadata.swift */; };
-		D7C4EB2DB6A5054C1CFB63922FDD022A /* DarkSkyClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D24513073035ACC3D9DDA8FEBED7AE /* DarkSkyClient.swift */; };
-		DD3738A79D4BE7053DE6765DB97C2739 /* Pods-Forecast-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B6919518D346D4D8627F7DF3D5EBD9 /* Pods-Forecast-dummy.m */; };
-		DFDC98D3E9388B8034760ABFDE9A3DFA /* ReferenceLineDrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58F79AAE589ED21BB2DAA907E167103 /* ReferenceLineDrawingView.swift */; };
+		019D66AFEC4B101680E5872B874212E9 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6902705D11E7B858D13940CBD8B4FD /* Result.swift */; };
+		2AE59BE130AD1576163B169B7CFCA55D /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DB504AB8A9BB7EFF6C5DBE5587E4F8 /* Flag.swift */; };
+		333906F71F29BCAC86DE1E714928744D /* ForecastIO-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 577AD82B4583A99A1836D79D1A6F5823 /* ForecastIO-dummy.m */; };
+		4D28B2C2D41AA509839523EA019B7BDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		601F1B1C8DFA1E08F4DB3002EC888F82 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = C531BFD697DD449A65ECF896F71FAC09 /* Language.swift */; };
+		62D6A90AB568011348B4081CAC4C0DC8 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5425878C620F423582EAAF95112D3106 /* Units.swift */; };
+		7FD87C63182D24135F437AF974F8E4B4 /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27742FAA7A8F6B2ACE859A1D6FA2072 /* DataPoint.swift */; };
+		81851667331B1DF6174A558047BE1BEA /* ForecastIOError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B448DB0F005946D23B80C24251590FCA /* ForecastIOError.swift */; };
+		88D7419E7DF8410EBFAAD323562FD913 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F46572221E8D841270774FE81EBE8E5 /* Alert.swift */; };
+		901B537C50A75ED7D31FE2EA33F5659B /* ForecastIO-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 399AD979FC9697BF7A5DA89CF08013E3 /* ForecastIO-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACF7BFC3C8DAFACF835181C5D03D7575 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		B5DA9DAF5453FC8FC2683C2C56C4E0BE /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E145886EFD7D671FA2580E8AB94D135E /* Icon.swift */; };
+		B7E25CFE205E1A00AB0A0614EE719B62 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07A8115FAEB63C3AA42F246481865E0 /* Forecast.swift */; };
+		BD999B497F81FE4133BF13323869B10D /* DataBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699F7AE1982B6D2FE1B9C1A9C41FD479 /* DataBlock.swift */; };
+		CFE641BFC14E301E1EE7C91A20DE362D /* Precipitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856CEBDD434EA4F898D236A38C3052CE /* Precipitation.swift */; };
+		D45D65363B3C6A6E7057773254488C7C /* Pods-Forecast-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B29A163166888C4B04E7C49A463815A /* Pods-Forecast-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D588523B80B0D43F19BE9E3AC2A2F688 /* RequestMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D37E06F51A26365713A950B23EF9558 /* RequestMetadata.swift */; };
+		D7C4EB2DB6A5054C1CFB63922FDD022A /* DarkSkyClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE83C53E4A09349A5AC3D70DF3B34A8 /* DarkSkyClient.swift */; };
+		F2977612572D629F3F7389F91AC74EF9 /* Pods-Forecast-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B6919518D346D4D8627F7DF3D5EBD9 /* Pods-Forecast-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1A29562B7EC1A56D22C1F87D16876B57 /* PBXContainerItemProxy */ = {
+		452C355730EE793399E7FA7D3AFA92F7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3F19738396425B89322D95E08B55C21F;
 			remoteInfo = ForecastIO;
 		};
-		2DE74ACB4D28BAAB0A5CC578B2D1144F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 46D55799D01BF824E3801FEA9339E4A7;
-			remoteInfo = ScrollableGraphView;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0569BF790F840C2BA756C7A7A2957BFB /* ScrollableGraphViewDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollableGraphViewDrawingLayer.swift; path = Classes/Drawing/ScrollableGraphViewDrawingLayer.swift; sourceTree = "<group>"; };
-		0796E07C24B94782881A6C92C695431D /* ScrollableGraphViewDrawingDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollableGraphViewDrawingDelegate.swift; path = Classes/Protocols/ScrollableGraphViewDrawingDelegate.swift; sourceTree = "<group>"; };
-		1429734CD45D2CA2B892C4CAF6314A52 /* BarPlot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarPlot.swift; path = Classes/Plots/BarPlot.swift; sourceTree = "<group>"; };
-		17DED9B98E316CE1E7B2BDDCF282424F /* GradientDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientDrawingLayer.swift; path = Classes/Drawing/GradientDrawingLayer.swift; sourceTree = "<group>"; };
-		19C0770F411D963356A975D1563F5CDF /* ScrollableGraphView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollableGraphView.swift; path = Classes/ScrollableGraphView.swift; sourceTree = "<group>"; };
-		1C9C722F7B6FD2608E6ABEC076DDDB1F /* Icon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Icon.swift; path = Source/Icon.swift; sourceTree = "<group>"; };
-		1D3115FB936783E8DD6B4F28852AADD1 /* ScrollableGraphView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ScrollableGraphView.modulemap; sourceTree = "<group>"; };
-		1D58592DD74678E2B42FFC9166CE0770 /* DataPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataPoint.swift; path = Source/DataPoint.swift; sourceTree = "<group>"; };
-		1F905257F42230381B8B8BB967230593 /* ForecastIO.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ForecastIO.modulemap; sourceTree = "<group>"; };
-		20482C3AD8A172D849493EBE09278003 /* DotPlot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DotPlot.swift; path = Classes/Plots/DotPlot.swift; sourceTree = "<group>"; };
+		1D37E06F51A26365713A950B23EF9558 /* RequestMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestMetadata.swift; path = Source/RequestMetadata.swift; sourceTree = "<group>"; };
+		1F46572221E8D841270774FE81EBE8E5 /* Alert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alert.swift; path = Source/Alert.swift; sourceTree = "<group>"; };
 		25628892C0F996C48EA56F203E085FFE /* Pods-Forecast-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Forecast-frameworks.sh"; sourceTree = "<group>"; };
-		27B0CA8EFD8272E773E87948F8295A8F /* Pods_Forecast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Forecast.framework; path = "Pods-Forecast.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27ED910404E229831C11CF9EB131377A /* Pods-Forecast.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Forecast.modulemap"; sourceTree = "<group>"; };
-		2A3B2D099E7B1DC1DC2DEB5EDCAE9921 /* BarDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarDrawingLayer.swift; path = Classes/Drawing/BarDrawingLayer.swift; sourceTree = "<group>"; };
+		28AA89C4C1DFF7316BEE0614A32BD7AC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B29A163166888C4B04E7C49A463815A /* Pods-Forecast-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Forecast-umbrella.h"; sourceTree = "<group>"; };
-		2CF328A9ADB1B471560EBBEDA218EB0F /* GraphPointAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphPointAnimation.swift; path = Classes/Plots/Animation/GraphPointAnimation.swift; sourceTree = "<group>"; };
-		381C7292192E739352E4AD82644E9F24 /* Alert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alert.swift; path = Source/Alert.swift; sourceTree = "<group>"; };
-		3AEA9E11543B07E721BCA1B74FA6413D /* DataBlock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataBlock.swift; path = Source/DataBlock.swift; sourceTree = "<group>"; };
-		42E6A525BFC2AD2514F2EA8AD776A07D /* LabelPool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabelPool.swift; path = Classes/Reference/LabelPool.swift; sourceTree = "<group>"; };
-		43B24332D35B0D03D3599359AAF981B8 /* ScrollableGraphViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollableGraphViewDataSource.swift; path = Classes/Protocols/ScrollableGraphViewDataSource.swift; sourceTree = "<group>"; };
-		4467C01B605E5B0AC2B8053C0961123C /* GraphPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphPoint.swift; path = Classes/Plots/Animation/GraphPoint.swift; sourceTree = "<group>"; };
-		455587F75F6A75E1590E67DBE8E6AE37 /* ForecastIO-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ForecastIO-dummy.m"; sourceTree = "<group>"; };
-		4F60C6D7429B9EC2472A9EA59B497294 /* ForecastIO-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ForecastIO-prefix.pch"; sourceTree = "<group>"; };
-		54DEA4F42F004298DC1BC98BDE17E58A /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		393C44037E98EC91742526880B712BED /* ForecastIO.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ForecastIO.modulemap; sourceTree = "<group>"; };
+		399AD979FC9697BF7A5DA89CF08013E3 /* ForecastIO-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ForecastIO-umbrella.h"; sourceTree = "<group>"; };
+		5425878C620F423582EAAF95112D3106 /* Units.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Units.swift; path = Source/Units.swift; sourceTree = "<group>"; };
+		577AD82B4583A99A1836D79D1A6F5823 /* ForecastIO-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ForecastIO-dummy.m"; sourceTree = "<group>"; };
+		5B6902705D11E7B858D13940CBD8B4FD /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
 		5BE1B9F25244AE973C2C0764B399DF9F /* Pods-Forecast-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Forecast-resources.sh"; sourceTree = "<group>"; };
-		63705C79F30FEC401240EC19D06415FD /* RequestMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestMetadata.swift; path = Source/RequestMetadata.swift; sourceTree = "<group>"; };
-		66057592A790C0021652F878A0AC4002 /* ReferenceLines.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReferenceLines.swift; path = Classes/Reference/ReferenceLines.swift; sourceTree = "<group>"; };
-		66D24513073035ACC3D9DDA8FEBED7AE /* DarkSkyClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DarkSkyClient.swift; path = Source/DarkSkyClient.swift; sourceTree = "<group>"; };
-		677E8A9B24D05E1BB821D93775D759E5 /* ForecastIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ForecastIO.framework; path = ForecastIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		699F7AE1982B6D2FE1B9C1A9C41FD479 /* DataBlock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataBlock.swift; path = Source/DataBlock.swift; sourceTree = "<group>"; };
 		702EF2E8299A0A177FCA2E51D3D12C4B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		722A0FED2367758F0404C4C8DE588D0D /* Flag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flag.swift; path = Source/Flag.swift; sourceTree = "<group>"; };
-		73FD2B0309B8145418A563E4CBC79E8E /* ForecastIOError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ForecastIOError.swift; path = Source/ForecastIOError.swift; sourceTree = "<group>"; };
-		7A651999EC0A8D38256641D2563B536D /* ScrollableGraphView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScrollableGraphView.xcconfig; sourceTree = "<group>"; };
-		85E57E38A06B0AEAD1C9D601C19468FB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8B459D159F1F48D365CC8E0A9494C2F9 /* LinePlot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LinePlot.swift; path = Classes/Plots/LinePlot.swift; sourceTree = "<group>"; };
+		7CD3A37456C31F0A9F86A464D1EBEECE /* ForecastIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ForecastIO.framework; path = ForecastIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CD9D697A92218FF856FB6F20C6B6904 /* ForecastIO-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ForecastIO-prefix.pch"; sourceTree = "<group>"; };
+		856CEBDD434EA4F898D236A38C3052CE /* Precipitation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Precipitation.swift; path = Source/Precipitation.swift; sourceTree = "<group>"; };
+		89DB504AB8A9BB7EFF6C5DBE5587E4F8 /* Flag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flag.swift; path = Source/Flag.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		97DF15D7EBA4987E99E1DE0D1FD4470E /* DotDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DotDrawingLayer.swift; path = Classes/Drawing/DotDrawingLayer.swift; sourceTree = "<group>"; };
-		9923CD341BF609D5BE7F5C6EBC6F3BC0 /* ForecastIO-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ForecastIO-umbrella.h"; sourceTree = "<group>"; };
-		9EB9404D2A623F95A052B0D3BE6D7D5A /* ScrollableGraphView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ScrollableGraphView-dummy.m"; sourceTree = "<group>"; };
 		A2CB0577FD4A88F85AD4EB13697E2B06 /* Pods-Forecast-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Forecast-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A54916DA896A3DF4FD09A86B5DF64AF9 /* ScrollableGraphView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ScrollableGraphView.framework; path = ScrollableGraphView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6B0F438513D1186B1F566FF37FCF7D4 /* Language.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Language.swift; path = Source/Language.swift; sourceTree = "<group>"; };
-		AAB8990DD8B394918AC1B92E29F7F8CC /* Plot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Plot.swift; path = Classes/Plots/Plot.swift; sourceTree = "<group>"; };
-		B58F79AAE589ED21BB2DAA907E167103 /* ReferenceLineDrawingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReferenceLineDrawingView.swift; path = Classes/Drawing/ReferenceLineDrawingView.swift; sourceTree = "<group>"; };
+		B448DB0F005946D23B80C24251590FCA /* ForecastIOError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ForecastIOError.swift; path = Source/ForecastIOError.swift; sourceTree = "<group>"; };
 		BA42B0DF12834602F75714C036217BFB /* Pods-Forecast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Forecast.debug.xcconfig"; sourceTree = "<group>"; };
-		BD97955FAA43EB345A8E76254341C691 /* FillDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FillDrawingLayer.swift; path = Classes/Drawing/FillDrawingLayer.swift; sourceTree = "<group>"; };
-		C9AAB1D959F08240E53A3E7D95D7BB60 /* ScrollableGraphView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollableGraphView-prefix.pch"; sourceTree = "<group>"; };
-		CAEA5B7F9A6DDF9130C152FD0A3D8113 /* Precipitation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Precipitation.swift; path = Source/Precipitation.swift; sourceTree = "<group>"; };
-		CCF0AB0B7976B1F8FDDA6E15835C59EC /* LineDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineDrawingLayer.swift; path = Classes/Drawing/LineDrawingLayer.swift; sourceTree = "<group>"; };
+		BA8C2BD0E0A4991E8CB235ECE6F251AF /* Pods_Forecast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Forecast.framework; path = "Pods-Forecast.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C531BFD697DD449A65ECF896F71FAC09 /* Language.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Language.swift; path = Source/Language.swift; sourceTree = "<group>"; };
+		C76BECEEDDEAB74B714563C87EBE67E3 /* ForecastIO.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ForecastIO.xcconfig; sourceTree = "<group>"; };
 		D2790B2B88C7093C1541CD314364C140 /* Pods-Forecast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Forecast.release.xcconfig"; sourceTree = "<group>"; };
+		DCE83C53E4A09349A5AC3D70DF3B34A8 /* DarkSkyClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DarkSkyClient.swift; path = Source/DarkSkyClient.swift; sourceTree = "<group>"; };
+		E07A8115FAEB63C3AA42F246481865E0 /* Forecast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Forecast.swift; path = Source/Forecast.swift; sourceTree = "<group>"; };
+		E145886EFD7D671FA2580E8AB94D135E /* Icon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Icon.swift; path = Source/Icon.swift; sourceTree = "<group>"; };
+		E27742FAA7A8F6B2ACE859A1D6FA2072 /* DataPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataPoint.swift; path = Source/DataPoint.swift; sourceTree = "<group>"; };
 		E2B6919518D346D4D8627F7DF3D5EBD9 /* Pods-Forecast-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Forecast-dummy.m"; sourceTree = "<group>"; };
-		EB7A8A81DF862FBD1DC49949AC474C1D /* ForecastIO.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ForecastIO.xcconfig; sourceTree = "<group>"; };
-		EC77A7CAE68B9CC5837D795CCF3F7183 /* Units.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Units.swift; path = Source/Units.swift; sourceTree = "<group>"; };
 		FE39FCCE0FA2332E28E139AB80F2C4B0 /* Pods-Forecast-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Forecast-acknowledgements.plist"; sourceTree = "<group>"; };
-		FF6086806D274F653C2B868A4E9817A9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FFB376160302019EEA3C9F1BFE3CBB0B /* ScrollableGraphView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollableGraphView-umbrella.h"; sourceTree = "<group>"; };
-		FFD562139FD8EB1C7A6CB06E2DD7B25D /* Forecast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Forecast.swift; path = Source/Forecast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2BC9C005C739E945436658B9DD086798 /* Frameworks */ = {
+		501D3083632D2FCF5061B8625BC13F01 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EFC0F1CEF3783B1225B65866A68C851 /* Foundation.framework in Frameworks */,
+				ACF7BFC3C8DAFACF835181C5D03D7575 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,100 +87,64 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88E7330109DCF39CFE3F0A08D2896749 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C57DE99214253E71855008303E83F148 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				239C5CB2E122F9A2598E6DE2F22154B8 /* Foundation.framework in Frameworks */,
+				4D28B2C2D41AA509839523EA019B7BDF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		49D3614065A38C0052611F5826A0B75D /* ScrollableGraphView */ = {
+		16AAE1EA0AC6541309B156A89E2E8298 /* ForecastIO */ = {
 			isa = PBXGroup;
 			children = (
-				2A3B2D099E7B1DC1DC2DEB5EDCAE9921 /* BarDrawingLayer.swift */,
-				1429734CD45D2CA2B892C4CAF6314A52 /* BarPlot.swift */,
-				97DF15D7EBA4987E99E1DE0D1FD4470E /* DotDrawingLayer.swift */,
-				20482C3AD8A172D849493EBE09278003 /* DotPlot.swift */,
-				BD97955FAA43EB345A8E76254341C691 /* FillDrawingLayer.swift */,
-				17DED9B98E316CE1E7B2BDDCF282424F /* GradientDrawingLayer.swift */,
-				4467C01B605E5B0AC2B8053C0961123C /* GraphPoint.swift */,
-				2CF328A9ADB1B471560EBBEDA218EB0F /* GraphPointAnimation.swift */,
-				42E6A525BFC2AD2514F2EA8AD776A07D /* LabelPool.swift */,
-				CCF0AB0B7976B1F8FDDA6E15835C59EC /* LineDrawingLayer.swift */,
-				8B459D159F1F48D365CC8E0A9494C2F9 /* LinePlot.swift */,
-				AAB8990DD8B394918AC1B92E29F7F8CC /* Plot.swift */,
-				B58F79AAE589ED21BB2DAA907E167103 /* ReferenceLineDrawingView.swift */,
-				66057592A790C0021652F878A0AC4002 /* ReferenceLines.swift */,
-				19C0770F411D963356A975D1563F5CDF /* ScrollableGraphView.swift */,
-				43B24332D35B0D03D3599359AAF981B8 /* ScrollableGraphViewDataSource.swift */,
-				0796E07C24B94782881A6C92C695431D /* ScrollableGraphViewDrawingDelegate.swift */,
-				0569BF790F840C2BA756C7A7A2957BFB /* ScrollableGraphViewDrawingLayer.swift */,
-				857BDE5AD2058C13BC8AA4FC366E653D /* Support Files */,
-			);
-			name = ScrollableGraphView;
-			path = ScrollableGraphView;
-			sourceTree = "<group>";
-		};
-		591400ED909F4CBEE1B142CDDBEE7DF6 /* ForecastIO */ = {
-			isa = PBXGroup;
-			children = (
-				381C7292192E739352E4AD82644E9F24 /* Alert.swift */,
-				66D24513073035ACC3D9DDA8FEBED7AE /* DarkSkyClient.swift */,
-				3AEA9E11543B07E721BCA1B74FA6413D /* DataBlock.swift */,
-				1D58592DD74678E2B42FFC9166CE0770 /* DataPoint.swift */,
-				722A0FED2367758F0404C4C8DE588D0D /* Flag.swift */,
-				FFD562139FD8EB1C7A6CB06E2DD7B25D /* Forecast.swift */,
-				73FD2B0309B8145418A563E4CBC79E8E /* ForecastIOError.swift */,
-				1C9C722F7B6FD2608E6ABEC076DDDB1F /* Icon.swift */,
-				A6B0F438513D1186B1F566FF37FCF7D4 /* Language.swift */,
-				CAEA5B7F9A6DDF9130C152FD0A3D8113 /* Precipitation.swift */,
-				63705C79F30FEC401240EC19D06415FD /* RequestMetadata.swift */,
-				54DEA4F42F004298DC1BC98BDE17E58A /* Result.swift */,
-				EC77A7CAE68B9CC5837D795CCF3F7183 /* Units.swift */,
-				6F41067AB006A1D90E2DB9B52D8155A3 /* Support Files */,
+				1F46572221E8D841270774FE81EBE8E5 /* Alert.swift */,
+				DCE83C53E4A09349A5AC3D70DF3B34A8 /* DarkSkyClient.swift */,
+				699F7AE1982B6D2FE1B9C1A9C41FD479 /* DataBlock.swift */,
+				E27742FAA7A8F6B2ACE859A1D6FA2072 /* DataPoint.swift */,
+				89DB504AB8A9BB7EFF6C5DBE5587E4F8 /* Flag.swift */,
+				E07A8115FAEB63C3AA42F246481865E0 /* Forecast.swift */,
+				B448DB0F005946D23B80C24251590FCA /* ForecastIOError.swift */,
+				E145886EFD7D671FA2580E8AB94D135E /* Icon.swift */,
+				C531BFD697DD449A65ECF896F71FAC09 /* Language.swift */,
+				856CEBDD434EA4F898D236A38C3052CE /* Precipitation.swift */,
+				1D37E06F51A26365713A950B23EF9558 /* RequestMetadata.swift */,
+				5B6902705D11E7B858D13940CBD8B4FD /* Result.swift */,
+				5425878C620F423582EAAF95112D3106 /* Units.swift */,
+				6DA2173E33550077A48C487D82FDE8F3 /* Support Files */,
 			);
 			name = ForecastIO;
 			path = ForecastIO;
 			sourceTree = "<group>";
 		};
-		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+		223F1515A8E3251C88060C9F1A4F26CA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+				16AAE1EA0AC6541309B156A89E2E8298 /* ForecastIO */,
 			);
-			name = iOS;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		6B43C2856AA7908460ACF5F3172F40DD /* Products */ = {
+		6DA2173E33550077A48C487D82FDE8F3 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				677E8A9B24D05E1BB821D93775D759E5 /* ForecastIO.framework */,
-				27B0CA8EFD8272E773E87948F8295A8F /* Pods_Forecast.framework */,
-				A54916DA896A3DF4FD09A86B5DF64AF9 /* ScrollableGraphView.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		6F41067AB006A1D90E2DB9B52D8155A3 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1F905257F42230381B8B8BB967230593 /* ForecastIO.modulemap */,
-				EB7A8A81DF862FBD1DC49949AC474C1D /* ForecastIO.xcconfig */,
-				455587F75F6A75E1590E67DBE8E6AE37 /* ForecastIO-dummy.m */,
-				4F60C6D7429B9EC2472A9EA59B497294 /* ForecastIO-prefix.pch */,
-				9923CD341BF609D5BE7F5C6EBC6F3BC0 /* ForecastIO-umbrella.h */,
-				85E57E38A06B0AEAD1C9D601C19468FB /* Info.plist */,
+				393C44037E98EC91742526880B712BED /* ForecastIO.modulemap */,
+				C76BECEEDDEAB74B714563C87EBE67E3 /* ForecastIO.xcconfig */,
+				577AD82B4583A99A1836D79D1A6F5823 /* ForecastIO-dummy.m */,
+				7CD9D697A92218FF856FB6F20C6B6904 /* ForecastIO-prefix.pch */,
+				399AD979FC9697BF7A5DA89CF08013E3 /* ForecastIO-umbrella.h */,
+				28AA89C4C1DFF7316BEE0614A32BD7AC /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/ForecastIO";
+			sourceTree = "<group>";
+		};
+		71B4ACCCCC045723F749AD03379C2FD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CD3A37456C31F0A9F86A464D1EBEECE /* ForecastIO.framework */,
+				BA8C2BD0E0A4991E8CB235ECE6F251AF /* Pods_Forecast.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -241,39 +152,16 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				84157850C1FEF6F51BF304B94C452F49 /* Pods */,
-				6B43C2856AA7908460ACF5F3172F40DD /* Products */,
+				223F1515A8E3251C88060C9F1A4F26CA /* Pods */,
+				71B4ACCCCC045723F749AD03379C2FD6 /* Products */,
 				C35A6C2AEA5D8C744D345CBBFBF189D3 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		84157850C1FEF6F51BF304B94C452F49 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				591400ED909F4CBEE1B142CDDBEE7DF6 /* ForecastIO */,
-				49D3614065A38C0052611F5826A0B75D /* ScrollableGraphView */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		857BDE5AD2058C13BC8AA4FC366E653D /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				FF6086806D274F653C2B868A4E9817A9 /* Info.plist */,
-				1D3115FB936783E8DD6B4F28852AADD1 /* ScrollableGraphView.modulemap */,
-				7A651999EC0A8D38256641D2563B536D /* ScrollableGraphView.xcconfig */,
-				9EB9404D2A623F95A052B0D3BE6D7D5A /* ScrollableGraphView-dummy.m */,
-				C9AAB1D959F08240E53A3E7D95D7BB60 /* ScrollableGraphView-prefix.pch */,
-				FFB376160302019EEA3C9F1BFE3CBB0B /* ScrollableGraphView-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/ScrollableGraphView";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -284,6 +172,14 @@
 				DF53D815A3F7E32F62233140E244AC10 /* Pods-Forecast */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		DF53D815A3F7E32F62233140E244AC10 /* Pods-Forecast */ = {
@@ -307,19 +203,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5F8BAB80023D6496243EB60CDEEFFC35 /* Headers */ = {
+		6D5188690216F8B583C0E923BCA9E598 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D420E63287F0145D0E9D83EDCFA173A0 /* ScrollableGraphView-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C5768EBD9A21BF2CEA1676063FA78D47 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B4B7B065414420A6786FF49777AD81A7 /* Pods-Forecast-umbrella.h in Headers */,
+				D45D65363B3C6A6E7057773254488C7C /* Pods-Forecast-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,43 +236,25 @@
 			);
 			name = ForecastIO;
 			productName = ForecastIO;
-			productReference = 677E8A9B24D05E1BB821D93775D759E5 /* ForecastIO.framework */;
+			productReference = 7CD3A37456C31F0A9F86A464D1EBEECE /* ForecastIO.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		46D55799D01BF824E3801FEA9339E4A7 /* ScrollableGraphView */ = {
+		646753FBCD5AB1DBB22773AB41208772 /* Pods-Forecast */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F2C9BB9449686DD1B1F1B548E29D2422 /* Build configuration list for PBXNativeTarget "ScrollableGraphView" */;
+			buildConfigurationList = B13950BAD460222864423043D39D644E /* Build configuration list for PBXNativeTarget "Pods-Forecast" */;
 			buildPhases = (
-				51EAAAF7FF79F694DADCADB8CAF88BD8 /* Sources */,
-				2BC9C005C739E945436658B9DD086798 /* Frameworks */,
-				5F8BAB80023D6496243EB60CDEEFFC35 /* Headers */,
+				8CDB45E47D66E23A9BEB16938EE18361 /* Sources */,
+				501D3083632D2FCF5061B8625BC13F01 /* Frameworks */,
+				6D5188690216F8B583C0E923BCA9E598 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = ScrollableGraphView;
-			productName = ScrollableGraphView;
-			productReference = A54916DA896A3DF4FD09A86B5DF64AF9 /* ScrollableGraphView.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		B5BA51A598BF6583A659AD6240EF2838 /* Pods-Forecast */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CAA7763099E2BFE31D063EA3F7CF8E7D /* Build configuration list for PBXNativeTarget "Pods-Forecast" */;
-			buildPhases = (
-				17897B71AD44FA43E62C8EE5697027E3 /* Sources */,
-				C57DE99214253E71855008303E83F148 /* Frameworks */,
-				C5768EBD9A21BF2CEA1676063FA78D47 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8A063AEDC0B872543A55E16D39EEF062 /* PBXTargetDependency */,
-				08F3129E28F7BA4DF1F4037A022EEDD0 /* PBXTargetDependency */,
+				F3C058CCD04C797E2BC64655424456C3 /* PBXTargetDependency */,
 			);
 			name = "Pods-Forecast";
 			productName = "Pods-Forecast";
-			productReference = 27B0CA8EFD8272E773E87948F8295A8F /* Pods_Forecast.framework */;
+			productReference = BA8C2BD0E0A4991E8CB235ECE6F251AF /* Pods_Forecast.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -404,52 +274,17 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 6B43C2856AA7908460ACF5F3172F40DD /* Products */;
+			productRefGroup = 71B4ACCCCC045723F749AD03379C2FD6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				3F19738396425B89322D95E08B55C21F /* ForecastIO */,
-				B5BA51A598BF6583A659AD6240EF2838 /* Pods-Forecast */,
-				46D55799D01BF824E3801FEA9339E4A7 /* ScrollableGraphView */,
+				646753FBCD5AB1DBB22773AB41208772 /* Pods-Forecast */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		17897B71AD44FA43E62C8EE5697027E3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DD3738A79D4BE7053DE6765DB97C2739 /* Pods-Forecast-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		51EAAAF7FF79F694DADCADB8CAF88BD8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				335C658FCF314B075244ECC777D33336 /* BarDrawingLayer.swift in Sources */,
-				5A9E4AC3F4B887C029087D83252381EF /* BarPlot.swift in Sources */,
-				7DB15A22FA649742FD3444FE11EC623F /* DotDrawingLayer.swift in Sources */,
-				38592B8C73BB7A60BF3A2EAFEA0C1DA6 /* DotPlot.swift in Sources */,
-				07AD90F7C3645AFA25AA9443F9169367 /* FillDrawingLayer.swift in Sources */,
-				4621C4DFC800741A12315D76BCB8C5A0 /* GradientDrawingLayer.swift in Sources */,
-				63A93AFDE40039A3520F62CDC20AF861 /* GraphPoint.swift in Sources */,
-				3A87100684704832DDCAF3BB17C762A6 /* GraphPointAnimation.swift in Sources */,
-				BA9CA98864DD68B6513FF124063D888D /* LabelPool.swift in Sources */,
-				A7635C4C81C60CE01A5C67888DADF89C /* LineDrawingLayer.swift in Sources */,
-				3A3D91EB6603B70CB22267D34A05A02B /* LinePlot.swift in Sources */,
-				363958A6CD1C10AAC578F890B35CAEB2 /* Plot.swift in Sources */,
-				DFDC98D3E9388B8034760ABFDE9A3DFA /* ReferenceLineDrawingView.swift in Sources */,
-				A83680B4DCEDBBC553516256BA2DF943 /* ReferenceLines.swift in Sources */,
-				1ABDCF748E0BD30FE8FA4F9CA038F34D /* ScrollableGraphView-dummy.m in Sources */,
-				06924299C935383FAE0BD41FF7051A76 /* ScrollableGraphView.swift in Sources */,
-				5CFFF7C3605EE740C50D0BFF6AA302D5 /* ScrollableGraphViewDataSource.swift in Sources */,
-				5402D9A4AB393687828854A369E821C7 /* ScrollableGraphViewDrawingDelegate.swift in Sources */,
-				9D22F927A40279BFED76BAE3DA1C9433 /* ScrollableGraphViewDrawingLayer.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6B59307687557A05B2C731F106D06CF2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -471,120 +306,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8CDB45E47D66E23A9BEB16938EE18361 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2977612572D629F3F7389F91AC74EF9 /* Pods-Forecast-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		08F3129E28F7BA4DF1F4037A022EEDD0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ScrollableGraphView;
-			target = 46D55799D01BF824E3801FEA9339E4A7 /* ScrollableGraphView */;
-			targetProxy = 2DE74ACB4D28BAAB0A5CC578B2D1144F /* PBXContainerItemProxy */;
-		};
-		8A063AEDC0B872543A55E16D39EEF062 /* PBXTargetDependency */ = {
+		F3C058CCD04C797E2BC64655424456C3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ForecastIO;
 			target = 3F19738396425B89322D95E08B55C21F /* ForecastIO */;
-			targetProxy = 1A29562B7EC1A56D22C1F87D16876B57 /* PBXContainerItemProxy */;
+			targetProxy = 452C355730EE793399E7FA7D3AFA92F7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		00A06BEB3987B2117D563D0D7CF7ACC1 /* Release */ = {
+		2AC9307AAF5C3EA5ED4A5158D01C4CDA /* Release */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		0592424AB9C65D656242B626F55E61CA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A651999EC0A8D38256641D2563B536D /* ScrollableGraphView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ScrollableGraphView/ScrollableGraphView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ScrollableGraphView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/ScrollableGraphView/ScrollableGraphView.modulemap";
-				PRODUCT_NAME = ScrollableGraphView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		17A567F99285E6B4C72796673573856B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB7A8A81DF862FBD1DC49949AC474C1D /* ForecastIO.xcconfig */;
+			baseConfigurationReference = C76BECEEDDEAB74B714563C87EBE67E3 /* ForecastIO.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -599,92 +343,15 @@
 				INFOPLIST_FILE = "Target Support Files/ForecastIO/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ForecastIO/ForecastIO.modulemap";
-				PRODUCT_NAME = ForecastIO;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		1A32CF9C54D3E1EEB15FDEED07EA3E31 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA42B0DF12834602F75714C036217BFB /* Pods-Forecast.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Forecast/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Forecast/Pods-Forecast.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Forecast;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8700844F29C858721E2EFA7AB32A2D63 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB7A8A81DF862FBD1DC49949AC474C1D /* ForecastIO.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ForecastIO/ForecastIO-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ForecastIO/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/ForecastIO/ForecastIO.modulemap";
+				PRODUCT_MODULE_NAME = ForecastIO;
 				PRODUCT_NAME = ForecastIO;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -692,7 +359,39 @@
 			};
 			name = Release;
 		};
-		CCF405426857C065123D950465A8AEFA /* Debug */ = {
+		36BB974B9C2C6EA2DF95D23E7D363965 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C76BECEEDDEAB74B714563C87EBE67E3 /* ForecastIO.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ForecastIO/ForecastIO-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ForecastIO/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ForecastIO/ForecastIO.modulemap";
+				PRODUCT_MODULE_NAME = ForecastIO;
+				PRODUCT_NAME = ForecastIO;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -724,6 +423,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -748,17 +448,17 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		D84AB07F5326042DA9D24A978BF43799 /* Release */ = {
+		9350957D3FB23035A62F18A3C876AA35 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D2790B2B88C7093C1541CD314364C140 /* Pods-Forecast.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -772,18 +472,14 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-Forecast/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Forecast/Pods-Forecast.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Forecast;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -794,10 +490,70 @@
 			};
 			name = Release;
 		};
-		E57441E4CEBE73BC8AC90ABA6003F425 /* Release */ = {
+		AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A651999EC0A8D38256641D2563B536D /* ScrollableGraphView.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		FA519C0FD5D4C67F5E57F14A821C4CEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA42B0DF12834602F75714C036217BFB /* Pods-Forecast.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -807,28 +563,26 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ScrollableGraphView/ScrollableGraphView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ScrollableGraphView/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Forecast/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/ScrollableGraphView/ScrollableGraphView.modulemap";
-				PRODUCT_NAME = ScrollableGraphView;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Forecast/Pods-Forecast.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.1;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -836,17 +590,17 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CCF405426857C065123D950465A8AEFA /* Debug */,
-				00A06BEB3987B2117D563D0D7CF7ACC1 /* Release */,
+				5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */,
+				AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CAA7763099E2BFE31D063EA3F7CF8E7D /* Build configuration list for PBXNativeTarget "Pods-Forecast" */ = {
+		B13950BAD460222864423043D39D644E /* Build configuration list for PBXNativeTarget "Pods-Forecast" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1A32CF9C54D3E1EEB15FDEED07EA3E31 /* Debug */,
-				D84AB07F5326042DA9D24A978BF43799 /* Release */,
+				FA519C0FD5D4C67F5E57F14A821C4CEC /* Debug */,
+				9350957D3FB23035A62F18A3C876AA35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -854,17 +608,8 @@
 		E057A4869B0EAAF5B844DA7D75290117 /* Build configuration list for PBXNativeTarget "ForecastIO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				17A567F99285E6B4C72796673573856B /* Debug */,
-				8700844F29C858721E2EFA7AB32A2D63 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F2C9BB9449686DD1B1F1B548E29D2422 /* Build configuration list for PBXNativeTarget "ScrollableGraphView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0592424AB9C65D656242B626F55E61CA /* Debug */,
-				E57441E4CEBE73BC8AC90ABA6003F425 /* Release */,
+				36BB974B9C2C6EA2DF95D23E7D363965 /* Debug */,
+				2AC9307AAF5C3EA5ED4A5158D01C4CDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

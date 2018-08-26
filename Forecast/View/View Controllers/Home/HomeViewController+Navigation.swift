@@ -13,12 +13,5 @@ extension HomeViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if segue.identifier == "segueToDetailViewController" {
-            if let detailViewController = segue.destination as? DetailViewController {
-                
-                detailViewController.selectedDay    = self.selectedDay
-                detailViewController.hourlyForecast = self.hourlyForecast
-            }
-        }
     }
 }
