@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Cj-uY-9iN" userLabel="TableView">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Cj-uY-9iN" userLabel="TableView">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="quh-ig-Hss">
@@ -216,7 +216,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="5Cj-uY-9iN" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="7l1-iv-aZ0"/>
+                            <constraint firstItem="5Cj-uY-9iN" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="7l1-iv-aZ0"/>
                             <constraint firstItem="5Cj-uY-9iN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XHt-y6-RnR"/>
                             <constraint firstItem="5Cj-uY-9iN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bri-RP-ZLz"/>
                             <constraint firstItem="5Cj-uY-9iN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="egF-S3-f1K"/>

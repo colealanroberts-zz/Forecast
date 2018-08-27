@@ -88,7 +88,7 @@ class HomeViewController: BaseViewController {
     
     @IBOutlet weak var tableViewHeaderView: UIView! {
         didSet {
-            tableViewHeaderView.backgroundColor = Colors.darkGrey
+            tableViewHeaderView.backgroundColor = Colors.black
             tableView.separatorStyle = .none
         }
     }
@@ -98,7 +98,7 @@ class HomeViewController: BaseViewController {
             tableView.delegate = self
             tableView.dataSource = self
             tableView.alpha = 0.0
-            tableView.backgroundColor = Colors.darkGrey
+            tableView.backgroundColor = Colors.black
         }
     }
 
