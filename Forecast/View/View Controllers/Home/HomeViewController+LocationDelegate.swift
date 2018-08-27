@@ -77,7 +77,7 @@ extension HomeViewController: CLLocationManagerDelegate {
             guard let humidity    = currently.humidity else { return }
             guard let windSpeed   = currently.windSpeed else { return }
             guard let uvIndex     = currently.uvIndex else { return }
-            guard let precip = currently.precipitationProbability else { return }
+            guard let precip      = currently.precipitationProbability else { return }
             
             // Temp
             
