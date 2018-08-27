@@ -86,6 +86,17 @@ class HomeViewController: BaseViewController {
         }
     }
     
+    @IBOutlet weak var precipitationLabel: UILabel! {
+        didSet {
+            precipitationLabel.textColor = Colors.white
+        }
+    }
+    
+    @IBOutlet weak var precipitationStaticLabel: UILabel! {
+        didSet {
+            precipitationStaticLabel.textColor = Colors.grey
+        }
+    }
     @IBOutlet weak var tableViewHeaderView: UIView! {
         didSet {
             tableViewHeaderView.backgroundColor = Colors.black

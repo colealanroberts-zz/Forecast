@@ -70,38 +70,44 @@ extension HomeViewController: CLLocationManagerDelegate {
 
             guard let icon = forecast?.currently?.icon else { return }
             let iconImage = self.homeViewModel.getIcon(icon)
+            
+            guard let currently = forecast?.currently else { return }
+            guard let temperature = currently.temperature else { return }
+            guard let summary     = currently.summary else { return }
+            guard let humidity    = currently.humidity else { return }
+            guard let windSpeed   = currently.windSpeed else { return }
+            guard let uvIndex     = currently.uvIndex else { return }
+            guard let precip = currently.precipitationProbability else { return }
+            
+            // Temp
+            
+            let temp = temperature.rounded()
+            var tempAsString = String(describing: temp)
+            tempAsString = tempAsString.components(separatedBy: ".")[0]
+            
+            // Humidity
+            
+            var humidityAsPercent = humidity * 100
+            humidityAsPercent = humidityAsPercent.rounded()
+            
+            // Precipitation
+            
+            var precipAsPercent = precip * 100
+            precipAsPercent = precipAsPercent.rounded()
+            
+            // Windspeed
+            
+            var windSpeedAsString = String(describing: windSpeed.rounded())
+            windSpeedAsString = windSpeedAsString.components(separatedBy: ".")[0]
+            
 
             DispatchQueue.main.async {
-                
-                guard let temperature = forecast?.currently?.temperature else { return }
-                guard let summary     = forecast?.currently?.summary else { return }
-                guard let humidity    = forecast?.currently?.humidity else { return }
-                guard let windSpeed   = forecast?.currently?.windSpeed else { return }
-                guard let uvIndex     = forecast?.currently?.uvIndex else { return }
-                
-                // Temp
-                
-                let temp = temperature.rounded()
-                var tempAsString = String(describing: temp)
-                tempAsString = tempAsString.components(separatedBy: ".")[0]
-                
-                // Humidity
-                
-                var humidityAsPercent = humidity * 100
-                humidityAsPercent = humidityAsPercent.rounded()
-                
-                // Windspeed
-                
-                var windSpeedAsString = String(describing: windSpeed.rounded())
-                windSpeedAsString = windSpeedAsString.components(separatedBy: ".")[0]
-                
-                // Update UI
-                
+            
                 self.currentTemperatureLabel.text = tempAsString + "°"
                 self.summaryLabel.text = summary
                 self.humidityLabel.text = String(describing: humidityAsPercent) + "%"
+                self.precipitationLabel.text = String(describing: precipAsPercent) + "%"
                 self.windSpeedLabel.text = windSpeedAsString + " mph"
-                
                 self.uvLabel.text = String(describing: uvIndex)
                 self.iconImageView.image = iconImage
                 
