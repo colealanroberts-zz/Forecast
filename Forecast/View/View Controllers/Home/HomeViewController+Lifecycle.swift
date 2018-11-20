@@ -61,12 +61,10 @@ extension HomeViewController {
         setNeedsStatusBarAppearanceUpdate()
         
         view.backgroundColor = Colors.black
-        
         homeViewModel.locationManager.delegate = self
         homeViewModel.locationManager.requestAlwaysAuthorization()
         homeViewModel.locationManager.startUpdatingLocation()
         homeViewModel.notificationCenter.addObserver(self, selector: #selector(refreshForecast), name: UIApplication.didBecomeActiveNotification, object: nil)
-    
         homeViewModel.spinner.center = self.view.center
         homeViewModel.spinner.color = Colors.white
         homeViewModel.spinner.startAnimating()

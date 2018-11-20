@@ -37,6 +37,7 @@
 		ED6DA1D62105AEC600FAB69E /* HomeViewController+LocationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6DA1D52105AEC600FAB69E /* HomeViewController+LocationDelegate.swift */; };
 		ED999445212E565600D39D60 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED999444212E565600D39D60 /* HomeViewModel.swift */; };
 		EDBE2FF72105C75300F0F71B /* WatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBE2FF62105C75300F0F71B /* WatchManager.swift */; };
+		EDF4576A213DC40F001C7563 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF45769213DC40F001C7563 /* Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +117,7 @@
 		ED6DA1D52105AEC600FAB69E /* HomeViewController+LocationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+LocationDelegate.swift"; sourceTree = "<group>"; };
 		ED999444212E565600D39D60 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		EDBE2FF62105C75300F0F71B /* WatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchManager.swift; sourceTree = "<group>"; };
+		EDF45769213DC40F001C7563 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Config.swift; path = Forecast/Enum/Config.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,6 +274,7 @@
 				ED999443212E561000D39D60 /* ViewModel */,
 				BB828FCC212F54C80023D385 /* HomeViewController+TableViewDelegate.swift */,
 				BB828FC6212F53AC0023D385 /* HomeViewController+TableViewDataSource.swift */,
+				EDF45769213DC40F001C7563 /* Config.swift */,
 				BB828FC1212F1B920023D385 /* HomeViewController+Lifecycle.swift */,
 				ED53DC232105D47B005274C6 /* HomeViewController+WCSessionDelegate.swift */,
 				ED6DA1D52105AEC600FAB69E /* HomeViewController+LocationDelegate.swift */,
@@ -508,6 +511,7 @@
 				ED6DA1C32105AE0600FAB69E /* HomeViewController.swift in Sources */,
 				EDBE2FF72105C75300F0F71B /* WatchManager.swift in Sources */,
 				BB828FCD212F54C80023D385 /* HomeViewController+TableViewDelegate.swift in Sources */,
+				EDF4576A213DC40F001C7563 /* Config.swift in Sources */,
 				ED6DA1C12105AE0600FAB69E /* AppDelegate.swift in Sources */,
 				BB828FD7212F5F1B0023D385 /* HomeViewController+Navigation.swift in Sources */,
 			);

@@ -14,7 +14,7 @@ class HomeViewModel {
     
     // MARK: - Properties
     
-    let forecast = DarkSkyClient(apiKey: "b6e4edcb31a89fe6409e93e4aaaf6ac1")
+    let forecast = DarkSkyClient(apiKey: Config.apiKey)
     let geocoder: CLGeocoder = CLGeocoder()
     let locationManager: CLLocationManager = CLLocationManager()
     let spinner: UIActivityIndicatorView = UIActivityIndicatorView()
